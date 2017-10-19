@@ -1,0 +1,42 @@
+table {
+    td {
+        border: 1px solid $gray;
+        border-collapse: collapse;
+        border-radius: 5%;
+        height: $td-size;
+        width: $td-size;
+        text-align: center;
+        @include on-hover-shadow;
+        @include keyframes(fade-in) {
+            0% {
+                opacity: 0;
+            }
+
+            90% {
+                opacity: 1;
+            }
+        }
+    }
+    .fade-in {
+        @include animation( 'fade-in 1s');
+    }
+}
+
+section {
+    @include centered-position-column;
+
+    div.footer {
+        border: 1px solid $gray;
+        border-collapse: collapse;
+        border-radius: 5%;
+        height: $td-size;
+        width: $td-size;
+        box-shadow: 0 1px 3px 1px gray;
+        @include centered-position;
+
+        i {
+            color: $dime-gray;
+            font-size: $game-tool-size;
+        }
+    }
+}

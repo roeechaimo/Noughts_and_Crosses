@@ -1,0 +1,6 @@
+body{
+  font-family: $main-font, cursive;
+  text-shadow: 3px 3px $light-gray;
+  background: linear-gradient(to bottom right, $background-base-pink, $background-lighter-pink, $background-light-pink, $background-extra-light-pink, $background-ultra-light-pink);
+  @include centered-position-column;
+}
